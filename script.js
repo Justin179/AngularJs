@@ -1,28 +1,14 @@
-// revealing module pattern
-
-(function(){
+//(function(){
     
-// 定義
-var createWorker = function(){
-    
-    var task1 = function(){
-        console.log('this is task1');
-    }
-    
-    var task2 = function(){
-        console.log('this is task2');
-    }
-        
-    return {
-      job1: task1,
-      job2: task2
-    };
-    
-}
 
+    
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+    
+    $scope.message = "test";
+    $scope.firstName = "John";
+    $scope.lastName = "Doe";
+    
+});
 
-var worker = createWorker();
-worker.job1();
-worker.job2();
-
-}());
+//}());

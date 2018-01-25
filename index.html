@@ -1,20 +1,25 @@
 <!DOCTYPE html>
-<html ng-app>
+<html>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>-->
+    <script src="angular.min.js"></script>    
+    <script src="script.js"></script>    
+<body ng-app="myApp">
 
-  <head>
-    <link rel="stylesheet" href="style.css" />
-    <script src="angular.min.js"></script>
-    <script src="script.js"></script>
-  </head>
+<div  ng-controller="myCtrl">
 
-    
-  <body ng-controller="MainCtrl">
-      
-    <h1>Hello Plunker!</h1>
-      {{843/42}}
-      
-      
-  </body>
-    
+   {{message}}
+    <!--
+First Name: <input type="text" ng-model="firstName"><br>
+Last Name: <input type="text" ng-model="lastName"><br>
+<br>
+Full Name: {{firstName + " " + lastName}}
+-->
 
+</div>
+
+<script>
+
+</script>
+
+</body>
 </html>
