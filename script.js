@@ -1,14 +1,6 @@
-//(function(){
-    
-
-    
-var app = angular.module('myApp', []);
-app.controller('myCtrl', function($scope) {
-    
-    $scope.message = "test";
-    $scope.firstName = "John";
-    $scope.lastName = "Doe";
-    
+var app = angular.module("myApp", []);
+app.directive("w3TestDirective", function() {
+    return {
+        template : "I was made in a directive constructor!"
+    };
 });
-
-//}());
